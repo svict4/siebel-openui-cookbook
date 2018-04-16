@@ -8,6 +8,8 @@ NB: Siebel may or may not be awesome.
 
 ### Get Current View Name:
 
+Clicking on a component/list/applet and running the below JS will return the View Name, which you can then lookup in `🛠️ Siebel Tools`
+
 ```SiebelApp.S_App.GetActiveView().GetName()```
 
 ### Get Component Tree:
