@@ -10,27 +10,39 @@ NB: Siebel may or may not be awesome.
 
 Clicking on a component/list/applet and running the below JS will return the View Name, which you can then lookup in `🛠️ Siebel Tools`
 
-```SiebelApp.S_App.GetActiveView().GetName()```
+```
+SiebelApp.S_App.GetActiveView().GetName()
+```
 
 ### Get Component Tree:
 
-```SiebelAppFacade.ComponentMgr.DisplayTree()```
+```
+SiebelAppFacade.ComponentMgr.DisplayTree()
+```
     
 ### Get Current List of Applets within Active View:
 
-```SiebelApp.S_App.GetActiveView().GetAppletMap()```
+```
+SiebelApp.S_App.GetActiveView().GetAppletMap()
+```
 
 ### Get Component:
    
-```SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/)```
+```
+SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/)
+```
 
 #### and it's PM (Presentation Model) object which is an abstraction of the metadata for each UI piece
 
-```SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/).GetPM()```
+```
+SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/).GetPM()
+```
 
 #### and it's PR (Physical Renderer) that binds to the PM to generate/render the actual HTML
 
-```SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/).GetPR().constructor```
+```
+SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/).GetPR().constructor
+```
 
 
 
