@@ -1,6 +1,6 @@
 # 🛠️🖥️ Siebel OpenUI API Methods cookbook
 
-[![WiP](https://img.shields.io/badge/Stability-Work_in_Progress-Orange.svg)](https://img.shields.io/badge/Stability-Work_in_Progress-Orange.svg)
+[![WiP](https://img.shields.io/badge/Stability-Work_in_Progress-Orange.svg)](https://img.shields.io/badge/Stability-Work_in_Progress-Orange.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
 An awesome *collection* [(not curation)](https://github.com/sindresorhus/awesome/blob/master/awesome.md) of helpful Siebel OpenUI API Methods to help you debug your OpenUI application.
 
