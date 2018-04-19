@@ -19,6 +19,25 @@ SiebelApp.S_App.GetActiveView().GetName()
 ```javascript
 SiebelAppFacade.ComponentMgr.DisplayTree()
 ```
+
+Will return a Node tree, for example:
+
+```
+VM712:1   Proxy Node -> o
+VM712:1     Proxy Node -> et
+VM712:1       Proxy Node -> p
+VM712:1       Component Node -> Left Pane Menu Items Applet
+VM712:1       Component Node -> Manage Practice Standards Outcome Form Applet
+VM712:1       Component Node -> Practice Standards Outcome List Applet
+VM712:1       Component Node -> Left Pane Details Form Applet
+VM712:1       Component Node -> Portal Practice Standards Header List Applet
+VM712:1       Component Node -> Practice Standards Outcome Export List Applet
+VM712:1       Component Node -> Application Playbar Applet
+VM712:1       Component Node -> Practice Standards Header Export List Applet
+VM712:1     Component Node -> Site Container Page
+VM712:1     Component Node -> Pages Standalone Applet
+VM712:1     Component Node -> Portal Application Practice Standards List View
+```
     
 ### Get Current List of Applets within Active View:
 
