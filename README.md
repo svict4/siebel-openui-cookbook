@@ -1,4 +1,6 @@
-# 🛠️🖥️ Siebel OpenUI API Methods cookbook
+
+
+## # 🛠️🖥️ Siebel OpenUI API Methods cookbook
 
 [![WiP](https://img.shields.io/badge/Stability-Work_in_Progress-Orange.svg)](https://img.shields.io/badge/Stability-Work_in_Progress-Orange.svg) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 
@@ -61,4 +63,18 @@ SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().Get
 
 ```javascript
 SiebelAppFacade.ComponentMgr.FindComponent(/*SiebelApp.S_App.GetActiveView().GetName()*/).GetPR().constructor
+```
+
+## WCAG Helpers
+
+Depending on your version of OpenUI, you may encounter several WCAG defects. Hopefully these snippets help you zero-in on those defects:
+
+### Find duplicate IDs
+
+```javascript
+$('[id]').each(function(){
+  var ids = $('[id="'+this.id+'"]');
+  if(ids.length>1 && ids[0]==this)
+    console.warn('Multiple IDs #'+this.id);
+});
 ```
