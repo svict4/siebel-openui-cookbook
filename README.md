@@ -72,9 +72,11 @@ Depending on your version of OpenUI, you may encounter several WCAG defects. Hop
 ### Find duplicate IDs
 
 ```javascript
-$('[id]').each(function(){
-  var ids = $('[id="'+this.id+'"]');
-  if(ids.length>1 && ids[0]==this)
-    console.warn('Multiple IDs #'+this.id);
-});
+$(function() {
+  $('[id]').each(function() {
+    var ids = $('[id="' + this.id + '"]');
+    if (ids.length > 1 && ids[0] == this)
+      console.warn('Multiple IDs #' + this.id);
+  });
+})
 ```
